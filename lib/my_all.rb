@@ -8,6 +8,7 @@ def my_all?(collection)
   #   i += 1
   # end
   collection.each {|i| block_return << collection[i]}
+  block_return
   if block_return.include?(false)
     false 
   else 
